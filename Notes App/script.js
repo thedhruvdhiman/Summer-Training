@@ -317,9 +317,9 @@ function searchNote(e) {
   notes.forEach((note) => {
     let noteTitle = note.querySelector("header .title h1");
     let notePara = note.querySelector(".textareaNote p");
-    let regex = new RegExp(value, "gi");
+    let matcherXX = new RegExp(value, "gi");
     note.style.display = `none`;
-    if (notePara.innerText.match(regex) || noteTitle.innerText.match(regex)) {
+    if (notePara.innerText.match(matcherXX) || noteTitle.innerText.match(matcherXX)) {
       note.style.display = `unset`;
     }
   });

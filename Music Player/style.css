@@ -19,7 +19,9 @@ body .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(243.18deg, #65dfc9 0%, #6596f6 100%);
+  background-image: url(./asset/backgroundIMG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body .container .glass {
@@ -28,7 +30,7 @@ body .container .glass {
   max-width: 500px;
   max-height: 520px;
   min-height: 500px;
-  background-color: #fff;
+  background-color: white;
   border-radius: 2rem;
   background: linear-gradient(125.07deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.12) 99.06%);
   -webkit-backdrop-filter: blur(53px);
@@ -55,7 +57,7 @@ body .container .glass .musicCont header {
 }
 
 body .container .glass .musicCont header h1 {
-  color: #fff;
+  color: black;
 }
 
 body .container .glass .musicCont .imgCont {
@@ -75,7 +77,7 @@ body .container .glass .musicCont .imgCont img {
 }
 
 body .container .glass .musicCont .nameAndAuthor {
-  color: #fff;
+  color: black;
   padding: 1rem;
   text-align: center;
 }
@@ -117,7 +119,7 @@ body .container .glass .musicCont .progressAndTime .progressCont .progress {
   height: 5px;
   border-radius: 999px;
   position: relative;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   cursor: pointer;
 }
@@ -127,7 +129,7 @@ body .container .glass .musicCont .progressAndTime .progressCont .progressFlow {
   height: 100%;
   width: 0%;
   border-radius: 999px;
-  background-color: #fff;
+  background-color: black;
 }
 
 body .container .glass .musicCont .progressAndTime .timeCont {
@@ -145,7 +147,7 @@ body .container .glass .musicCont .progressAndTime .timeCont {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: #fff;
+  color: black;
 }
 
 body .container .glass .musicCont .progressAndTime .timeCont p {
@@ -167,7 +169,7 @@ body .container .glass .musicCont .icons button {
 
 body .container .glass .musicCont .icons button ion-icon {
   font-size: 2.5rem;
-  color: #dee5ef;
+  color: #000000;
 }
 
 .container .circle {

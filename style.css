@@ -1,95 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background: linear-gradient(125deg, rgba(0,0,0,1) 50%, rgba(153,153,153,1) 100%) no-repeat;
-    background-size: contain;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2rem;
+body {
+  background: -webkit-gradient(linear, left bottom, left top, from(#d51d1d), color-stop(25%, #15958c), color-stop(75%, #00a298), to(#d51d1d));
+  background: linear-gradient(0deg, #d51d1d 0%, #15958c 25%, #00a298 75%, #d51d1d 100%);
+  background-size: cover;
+  background-repeat: repeat;
+  font-family: "Libre Franklin", sans-serif;
 }
 
-.container{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
+.container {
+  height: 100vh;
+  width: 100%;
 }
 
-.list{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* -ms-grid-columns: 1fr 1fr; */
-    justify-content: space-between;
-    place-items: center;
-    margin-top: 50px;
+.container .heading {
+  text-align: center;
+  font-size: 2.3rem;
+  padding: 1.5em;
 }
 
-.heading{
-    width: auto;
-    height: auto;
-    text-shadow: 0px 8px 20px #ffffff;
-    font-weight: 900;
-    text-align: center;
-}
-.content ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.content ul li{
-    list-style: none;
-    margin-top: 20px;
-    width: 600px;
-    height: 68px;
+.container .content .list {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
-.content ul li a{
-    transition: 500ms;
-    color: white;
-    text-decoration: none;
+.container .content .list ul li {
+  font-size: 2rem;
+  list-style: none;
+  font-weight: 900;
+  padding: 8px 0;
 }
 
-.content ul li a:hover{
-    font-size: 3rem;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    font-weight: bold;
-    margin-bottom: 10px;
+.container .content .list ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-/* clock */
+.container .content .list ul li a:hover {
+  color: white;
+}
+
 .clock {
-	/* width: 30rem; */
-	/* height: 30rem; */
-    height: 25vh;
-    width: 25vh;
-	border: 20px solid white;
-	border-radius: 50%;
-	margin: 50px auto;
-	position: relative;
-	padding: 2rem;
-	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
-		inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 25vh;
+  width: 25vh;
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.clock-face {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	transform: translateY(-3px); /*  height of the clock hands */
+
+.clock .clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  /*  height of the clock hands */
 }
-.hand {
-	width: 50%;
-	height: 6px;
-	background: rgb(0, 0, 0);
-	position: absolute;
-	top: 50%;
-	transform-origin: 100%;
-	transform: rotate(90deg);
-	transition: all 0.05s;
-	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+
+.clock .hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
+
+@media (max-width: 600px) {
+  .container .content .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .clock {
+    margin-top: -30px;
+  }
+  .container .content .list ul {
+    margin-top: -10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
