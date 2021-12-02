@@ -81,12 +81,21 @@ function backgroundImage(data){
         case "rain":
             document.body.style.backgroundImage = "url(./icons/rain.jpg)";
         break
+
+
         case "few clouds":
             document.body.style.backgroundImage = "url(./icons/few cloud.jpg)";
         break
         case "broken clouds":
             document.body.style.backgroundImage = "url(./icons/broken clouds.jpg)";
         break
+        case "Clouds":
+            document.body.style.backgroundImage = "url(./icons/broken clouds.jpg)";
+        break
+
+
+
+
         case "mist":
             document.body.style.backgroundImage = "url(./icons/mist.jpg)";
         break
