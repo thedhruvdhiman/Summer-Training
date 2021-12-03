@@ -5,7 +5,10 @@
 }
 
 body {
-  background: #a61dd7;
+
+background: -webkit-gradient(linear, left bottom, left top, from(#d51d1d), color-stop(25%, #15958c), color-stop(75%, #00a298), to(#d51d1d));
+  background: linear-gradient(0deg, #d51d1d 0%, #15958c 25%, #00a298 75%, #d51d1d 100%);
+
   background-size: cover;
   background-repeat: repeat;
   font-family: "Libre Franklin", sans-serif;
