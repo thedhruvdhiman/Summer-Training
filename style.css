@@ -26,8 +26,7 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .container .content .list ul li {
