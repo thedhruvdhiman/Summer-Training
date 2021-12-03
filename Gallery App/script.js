@@ -29,7 +29,8 @@ class GalleryApp {
       const pexelsCuratedApi = this.getCuratedUrl(this.curatedIndex);
       let fetchData = await this.fetchImages(pexelsCuratedApi);
       this.createImageEl(fetchData);
-    } else {
+    } 
+    else {
       let fakeFetchData = await fetch(fakeData).then((res) => res.json());
       alert(
         `You Cannot use this app unless you set your api key in your 'pexelsApi' variable`
@@ -37,6 +38,7 @@ class GalleryApp {
       this.createImageEl(fakeFetchData);
     }
 
+    
     this.form.addEventListener("submit", this.searchImage.bind(this));
     this.loadMoreBtn.addEventListener("click", this.loadMoreImages.bind(this));
 
